@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="mainApp">
+	<head>
+		<meta charset="UTF-8">
+		<title>临沂追溯</title>
+	</head>
+	<body>
+		<div ng-controller="MainController">
+		    <header>
+		        <h2>头11111111</h2>
+		        <ul>
+		            <li><a href="#/message">首页信息</a></li>
+		            <li ng-show="isLogin">
+		                <span>欢迎</span>
+		                <a >注销</a>
+		            </li>
+		            <li><a href="#/farm">田间管理</a></li>
+		            <li><a href="#/fertilization">施肥管理</a></li>
+		        	<li><a href="#/pharmacy">用药管理</a></li>
+		        </ul>
+		    </header>
+		
+		    <div ui-view></div>
+		    <footer>
+		        <h2>底部s</h2>
+		    </footer>
+		</div>
+		
+		<!--<script src="http://localhost:8080/public/dist/main.bundle.js"></script></script>-->
+		<!--<script src="http://localhost:3000/dist/main.bundle.js"></script>-->
+		<!--<script src="js/main.js" type="text/javascript">-->
+		
+		<!--引入打包后的js-->
+		<!--<script src="dist/main.bundle.js"></script>-->
+		<!--<script src="./dist/main.bundle.js"></script>-->
+		
+		<!--热服务的,npm run zijishezhi-->
+		<script src="main.bundle.js"></script>
+	</body>
+</html>
